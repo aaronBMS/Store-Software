@@ -11,32 +11,32 @@ import java.util.Date;
  *
  * @author Aaron
  */
-public class Venta {
+public class Compra {
     
     /**
      * Variables Privadas.
      */
-    private int codigo,DNI;
-    private String cliente,responsable,observaciones;
+    private int codigo,RUC;
+    private String proveedor,responsable,observaciones;
     private Date fecha;
     static final double IGV=0.18;
     private double pagoTotal;
     
     /**
      * Método Constructor.
-     * @param codigo - Identificador por venta.
-     * @param DNI - Identificador por cliente.
-     * @param cliente - Nombre.
+     * @param codigo - Identificador por compra.
+     * @param RUC - Identificador por proveedor.
+     * @param proveedor - Proveedor.
      * @param responsable - Responsable/Usuario.
      * @param fecha - Fecha actual.
      * @param observaciones - Observaciones.
      * @param pagoTotal - Pago total.
      */
-    public Venta(int codigo, int DNI, String cliente, String responsable, Date fecha, String observaciones, 
+    public Compra(int codigo, int RUC, String proveedor, String responsable, Date fecha, String observaciones, 
             double pagoTotal){
         this.codigo=codigo;
-        this.DNI=DNI;
-        this.cliente=cliente;
+        this.RUC=RUC;
+        this.proveedor=proveedor;
         this.responsable=responsable;
         this.fecha=fecha;
         this.observaciones=observaciones;
@@ -46,9 +46,9 @@ public class Venta {
     /**
      * Método Constructor Vacío.
      */
-    public Venta(){
+    public Compra(){  
     }
-    
+
     /**
      * Métodos Get y Set.
      * @return 
@@ -61,20 +61,20 @@ public class Venta {
         this.codigo = codigo;
     }
 
-    public int getDNI() {
-        return DNI;
+    public int getRUC() {
+        return RUC;
     }
 
-    public void setDNI(int DNI) {
-        this.DNI = DNI;
+    public void setRUC(int RUC) {
+        this.RUC = RUC;
     }
 
-    public String getCliente() {
-        return cliente;
+    public String getProveedor() {
+        return proveedor;
     }
 
-    public void setCliente(String cliente) {
-        this.cliente = cliente;
+    public void setProveedor(String proveedor) {
+        this.proveedor = proveedor;
     }
 
     public String getResponsable() {
@@ -108,5 +108,5 @@ public class Venta {
     public void setPagoTotal(double pagoTotal) {
         this.pagoTotal = pagoTotal;
     }
-    
+       
 }
