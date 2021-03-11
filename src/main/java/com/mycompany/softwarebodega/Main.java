@@ -5,6 +5,7 @@
  */
 package com.mycompany.softwarebodega;
 
+import com.mycompany.softwarebodega.dao.Conexion;
 import com.mycompany.softwarebodega.vista.Login;
 
 /**
@@ -14,9 +15,12 @@ import com.mycompany.softwarebodega.vista.Login;
 public class Main {
     
     public static Login login;
+    public static Conexion conexion;
     
     public static void main(String[] args) {
         
+        conexion=new Conexion();
+        conexion.getConecction();
         login=new Login();
         login.setVisible(true);
     }
