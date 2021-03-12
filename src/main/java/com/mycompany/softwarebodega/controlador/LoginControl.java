@@ -5,13 +5,30 @@
  */
 package com.mycompany.softwarebodega.controlador;
 
+import com.mycompany.softwarebodega.dao.UsuarioCRUD;
+import com.mycompany.softwarebodega.vista.Login;
+import com.mycompany.softwarebodega.vista.Menu;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author Aaron
  */
-public class LoginControl {
+public class LoginControl implements ActionListener{
     
-    public LoginControl(){
-        
+    Login login;
+    
+    public LoginControl(Login log){
+        this.login=log;
+        this.login.jbtnIngresar.addActionListener(this);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if(e.getSource()==login.jbtnIngresar){
+            UsuarioCRUD userCRUD=new UsuarioCRUD();
+            userCRUD.Validate();
+        }
     }
 }

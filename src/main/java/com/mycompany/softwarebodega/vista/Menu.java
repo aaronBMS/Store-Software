@@ -16,6 +16,7 @@ public class Menu extends javax.swing.JFrame {
      */
     public Menu() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -27,14 +28,51 @@ public class Menu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        jpSuperior = new javax.swing.JPanel();
+        jpOpciones = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(66, 67, 68));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(141, 230, 238));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 90));
+        jpSuperior.setBackground(new java.awt.Color(141, 230, 238));
+        jpSuperior.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jpSuperior.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().add(jpSuperior, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 90));
+
+        jpOpciones.setBackground(new java.awt.Color(141, 230, 238));
+        jpOpciones.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jpOpciones.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButton1.setText("Compras");
+        jpOpciones.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 160, 40));
+
+        jButton2.setText("Ventas");
+        jpOpciones.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 160, 40));
+
+        jButton3.setText("Clientes");
+        jpOpciones.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 160, 40));
+
+        jButton4.setText("Usuarios");
+        jpOpciones.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, 160, 40));
+
+        jButton5.setText("Productos");
+        jpOpciones.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 160, 40));
+
+        jButton6.setText("Proveedores");
+        jpOpciones.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, 160, 40));
+
+        jButton7.setText("Almacen");
+        jpOpciones.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 160, 40));
+
+        getContentPane().add(jpOpciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 180, 420));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -75,6 +113,14 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JPanel jpOpciones;
+    private javax.swing.JPanel jpSuperior;
     // End of variables declaration//GEN-END:variables
 }

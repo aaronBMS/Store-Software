@@ -24,6 +24,10 @@ public class Conexion {
     
     public static Connection con;
     
+    /**
+     * 
+     * @return - Retorna la conexion.
+     */
     public Connection getConecction(){
         try{
             Class.forName(DRIVER);
