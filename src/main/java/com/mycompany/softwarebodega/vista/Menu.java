@@ -30,15 +30,17 @@ public class Menu extends javax.swing.JFrame {
 
         jpSuperior = new javax.swing.JPanel();
         jpOpciones = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
+        jbtnCompras = new javax.swing.JButton();
+        jbtnVentas = new javax.swing.JButton();
+        jbtnClientes = new javax.swing.JButton();
+        jbtnUsuarios = new javax.swing.JButton();
+        jbtnProductos = new javax.swing.JButton();
+        jbtnProveedores = new javax.swing.JButton();
+        jbtnAlmacen = new javax.swing.JButton();
+        jdpContenerdor = new javax.swing.JDesktopPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Sistema Bodega");
         setBackground(new java.awt.Color(66, 67, 68));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -51,28 +53,53 @@ public class Menu extends javax.swing.JFrame {
         jpOpciones.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jpOpciones.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setText("Compras");
-        jpOpciones.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 160, 40));
+        jbtnCompras.setBackground(new java.awt.Color(69, 73, 75));
+        jbtnCompras.setForeground(new java.awt.Color(187, 187, 188));
+        jbtnCompras.setText("Compras");
+        jbtnCompras.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jpOpciones.add(jbtnCompras, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 160, 40));
 
-        jButton2.setText("Ventas");
-        jpOpciones.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 160, 40));
+        jbtnVentas.setBackground(new java.awt.Color(69, 73, 75));
+        jbtnVentas.setForeground(new java.awt.Color(187, 187, 188));
+        jbtnVentas.setText("Ventas");
+        jbtnVentas.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jpOpciones.add(jbtnVentas, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 160, 40));
 
-        jButton3.setText("Clientes");
-        jpOpciones.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 160, 40));
+        jbtnClientes.setBackground(new java.awt.Color(69, 73, 75));
+        jbtnClientes.setForeground(new java.awt.Color(187, 187, 188));
+        jbtnClientes.setText("Clientes");
+        jbtnClientes.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jpOpciones.add(jbtnClientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 160, 40));
 
-        jButton4.setText("Usuarios");
-        jpOpciones.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, 160, 40));
+        jbtnUsuarios.setBackground(new java.awt.Color(69, 73, 75));
+        jbtnUsuarios.setForeground(new java.awt.Color(187, 187, 188));
+        jbtnUsuarios.setText("Usuarios");
+        jbtnUsuarios.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jpOpciones.add(jbtnUsuarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, 160, 40));
 
-        jButton5.setText("Productos");
-        jpOpciones.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 160, 40));
+        jbtnProductos.setBackground(new java.awt.Color(69, 73, 75));
+        jbtnProductos.setForeground(new java.awt.Color(187, 187, 188));
+        jbtnProductos.setText("Productos");
+        jbtnProductos.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jpOpciones.add(jbtnProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 160, 40));
 
-        jButton6.setText("Proveedores");
-        jpOpciones.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, 160, 40));
+        jbtnProveedores.setBackground(new java.awt.Color(69, 73, 75));
+        jbtnProveedores.setForeground(new java.awt.Color(187, 187, 188));
+        jbtnProveedores.setText("Proveedores");
+        jbtnProveedores.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jpOpciones.add(jbtnProveedores, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, 160, 40));
 
-        jButton7.setText("Almacen");
-        jpOpciones.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 160, 40));
+        jbtnAlmacen.setBackground(new java.awt.Color(69, 73, 75));
+        jbtnAlmacen.setForeground(new java.awt.Color(187, 187, 188));
+        jbtnAlmacen.setText("Almacen");
+        jbtnAlmacen.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jpOpciones.add(jbtnAlmacen, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 160, 40));
 
         getContentPane().add(jpOpciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 180, 420));
+
+        jdpContenerdor.setBackground(new java.awt.Color(69, 73, 75));
+        jdpContenerdor.setLayout(new java.awt.BorderLayout());
+        getContentPane().add(jdpContenerdor, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 90, 690, 420));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -113,13 +140,14 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
+    public javax.swing.JButton jbtnAlmacen;
+    public javax.swing.JButton jbtnClientes;
+    public javax.swing.JButton jbtnCompras;
+    public javax.swing.JButton jbtnProductos;
+    public javax.swing.JButton jbtnProveedores;
+    public javax.swing.JButton jbtnUsuarios;
+    public javax.swing.JButton jbtnVentas;
+    public javax.swing.JDesktopPane jdpContenerdor;
     private javax.swing.JPanel jpOpciones;
     private javax.swing.JPanel jpSuperior;
     // End of variables declaration//GEN-END:variables

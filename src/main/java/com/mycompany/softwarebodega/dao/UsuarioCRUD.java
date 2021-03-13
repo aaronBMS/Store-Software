@@ -26,7 +26,13 @@ public class UsuarioCRUD implements UsuarioFormato {
 
     @Override
     public void Create(Usuario e) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        try{
+            Statement st=Conexion.con.createStatement();
+            int rs=st.executeUpdate("INSERT INTO USUARIO VALUES ("+e.getUsuario()+",'"+e.getNombre()+"','"+e.getApellido()+"',"+e.getTelefono()+",'"+e.getCorreo()+"','"+e.getUsuario()+"','"+e.getContraseña()+"','"+e.getCondicion()+"')");
+            JOptionPane.showMessageDialog(null,"Creado");
+        }catch(Exception ex){
+            
+        }
     }
 
     @Override

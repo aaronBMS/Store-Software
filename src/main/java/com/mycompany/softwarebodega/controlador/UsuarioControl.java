@@ -5,10 +5,25 @@
  */
 package com.mycompany.softwarebodega.controlador;
 
+import com.mycompany.softwarebodega.vista.UsuarioVista;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author Aaron
  */
-public class UsuarioControl {
+public class UsuarioControl implements ActionListener{
     
+    UsuarioVista user;
+    
+    public UsuarioControl(UsuarioVista u){
+        this.user=u;
+        
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+       
+    }
 }
