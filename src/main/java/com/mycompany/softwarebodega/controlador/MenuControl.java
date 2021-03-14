@@ -34,6 +34,7 @@ public class MenuControl implements ActionListener{
             CerrarVentanas();
             menu.jdpContenerdor.add(com.mycompany.softwarebodega.Main.usuarioVista);
             com.mycompany.softwarebodega.Main.usuarioVista.setVisible(true);
+            com.mycompany.softwarebodega.Main.usuarioVista.jtxtNombre.requestFocus();
         }
         if(e.getSource()==menu.jbtnVentas){
             CerrarVentanas();

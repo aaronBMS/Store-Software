@@ -42,8 +42,7 @@ public class Login extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jpTitle.setBackground(new java.awt.Color(141, 230, 238));
-        jpTitle.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jpTitle.setBackground(new java.awt.Color(139, 184, 146));
         jpTitle.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N

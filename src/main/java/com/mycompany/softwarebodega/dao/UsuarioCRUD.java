@@ -18,7 +18,10 @@ import javax.swing.JOptionPane;
  * @author Aaron
  */
 public class UsuarioCRUD implements UsuarioFormato {
-
+ 
+    Statement st;
+    ResultSet rs;
+    
     @Override
     public void Search() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -26,12 +29,12 @@ public class UsuarioCRUD implements UsuarioFormato {
 
     @Override
     public void Create(Usuario e) {
-        try{
-            Statement st=Conexion.con.createStatement();
-            int rs=st.executeUpdate("INSERT INTO USUARIO VALUES ("+e.getUsuario()+",'"+e.getNombre()+"','"+e.getApellido()+"',"+e.getTelefono()+",'"+e.getCorreo()+"','"+e.getUsuario()+"','"+e.getContraseña()+"','"+e.getCondicion()+"')");
-            JOptionPane.showMessageDialog(null,"Creado");
-        }catch(Exception ex){
-            
+        try {
+            st = Conexion.con.createStatement();
+            int afect = st.executeUpdate("INSERT INTO USUARIO VALUES ("+e.getCodigo()+",'"+e.getNombre()+"','"+e.getApellido()+"',"+e.getTelefono()+",'"+e.getCorreo()+"','"+e.getUsuario()+"','"+e.getContraseña()+"','"+e.getCondicion()+"')");
+            JOptionPane.showMessageDialog(null, "Creado");
+        } catch (SQLException ex) {
+            System.out.print(ex.getMessage());
         }
     }
 
@@ -53,20 +56,20 @@ public class UsuarioCRUD implements UsuarioFormato {
         int res = 0;
         try {
             Statement st = Conexion.con.createStatement();
-            ResultSet rs = st.executeQuery("SELECT * FROM USUARIO WHERE USUARIO='"+com.mycompany.softwarebodega.Main.login.jtxtUsuario.getText()+"'AND CONTRASEÑA='"+com.mycompany.softwarebodega.Main.login.jtxtContraseña.getText()+"'");
+            ResultSet rs = st.executeQuery("SELECT * FROM USUARIO WHERE USUARIO='" + com.mycompany.softwarebodega.Main.login.jtxtUsuario.getText() + "'AND CONTRASEÑA='" + com.mycompany.softwarebodega.Main.login.jtxtContraseña.getText() + "'");
             if (rs.next()) {
                 res = 1;
                 if (res == 1) {
                     JOptionPane.showMessageDialog(null, "Bienvenido");
                     com.mycompany.softwarebodega.Main.menu.setVisible(true);
                     com.mycompany.softwarebodega.Main.login.dispose();
-                    } 
-                }else {
-                    JOptionPane.showMessageDialog(null, "Usuario/Contraseña Incorrectos");
                 }
-                com.mycompany.softwarebodega.Main.login.jtxtUsuario.setText("");
-                com.mycompany.softwarebodega.Main.login.jtxtContraseña.setText("");
-                com.mycompany.softwarebodega.Main.login.jtxtUsuario.requestFocus();
+            } else {
+                JOptionPane.showMessageDialog(null, "Usuario/Contraseña Incorrectos");
+            }
+            com.mycompany.softwarebodega.Main.login.jtxtUsuario.setText("");
+            com.mycompany.softwarebodega.Main.login.jtxtContraseña.setText("");
+            com.mycompany.softwarebodega.Main.login.jtxtUsuario.requestFocus();
         } catch (SQLException ex) {
             System.out.print(ex.getMessage());
         }

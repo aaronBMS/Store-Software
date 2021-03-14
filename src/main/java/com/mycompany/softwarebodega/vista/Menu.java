@@ -44,12 +44,12 @@ public class Menu extends javax.swing.JFrame {
         setBackground(new java.awt.Color(66, 67, 68));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jpSuperior.setBackground(new java.awt.Color(141, 230, 238));
+        jpSuperior.setBackground(new java.awt.Color(139, 184, 146));
         jpSuperior.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jpSuperior.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         getContentPane().add(jpSuperior, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 90));
 
-        jpOpciones.setBackground(new java.awt.Color(141, 230, 238));
+        jpOpciones.setBackground(new java.awt.Color(139, 184, 146));
         jpOpciones.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jpOpciones.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
