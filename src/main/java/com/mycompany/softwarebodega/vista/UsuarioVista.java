@@ -27,31 +27,31 @@ public class UsuarioVista extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        jlblContraseña = new javax.swing.JLabel();
         jtxtTelefono = new javax.swing.JTextField();
         jtxtUsuario = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
+        jlblNombre = new javax.swing.JLabel();
         jtxtNombre = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
+        jlblApellido = new javax.swing.JLabel();
         jtxtApellido = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        jlblTelefono = new javax.swing.JLabel();
+        jlblCorreo = new javax.swing.JLabel();
         jtxtCorreo = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
+        jlblCondicion = new javax.swing.JLabel();
         jpfContraseña = new javax.swing.JPasswordField();
-        jLabel8 = new javax.swing.JLabel();
+        jlblUsuario = new javax.swing.JLabel();
         jcbCondicion = new javax.swing.JComboBox<>();
         jbtnCancelar = new javax.swing.JButton();
         jbtnCrear = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        jlblTitulo = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(69, 73, 75));
         setClosable(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setForeground(new java.awt.Color(187, 187, 188));
-        jLabel1.setText(" Contraseña:");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 180, 80, 30));
+        jlblContraseña.setForeground(new java.awt.Color(187, 187, 188));
+        jlblContraseña.setText(" Contraseña:");
+        getContentPane().add(jlblContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 180, 80, 30));
 
         jtxtTelefono.setBackground(new java.awt.Color(69, 73, 75));
         jtxtTelefono.setForeground(new java.awt.Color(187, 187, 188));
@@ -63,49 +63,49 @@ public class UsuarioVista extends javax.swing.JInternalFrame {
         jtxtUsuario.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         getContentPane().add(jtxtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 130, 120, 30));
 
-        jLabel3.setForeground(new java.awt.Color(187, 187, 188));
-        jLabel3.setText("Nombre:");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, -1, 30));
+        jlblNombre.setForeground(new java.awt.Color(187, 187, 188));
+        jlblNombre.setText("Nombre:");
+        getContentPane().add(jlblNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, -1, 30));
 
         jtxtNombre.setBackground(new java.awt.Color(69, 73, 75));
         jtxtNombre.setForeground(new java.awt.Color(187, 187, 188));
         jtxtNombre.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         getContentPane().add(jtxtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 80, 120, 30));
 
-        jLabel4.setForeground(new java.awt.Color(187, 187, 188));
-        jLabel4.setText("Apellido:");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, -1, 30));
+        jlblApellido.setForeground(new java.awt.Color(187, 187, 188));
+        jlblApellido.setText("Apellido:");
+        getContentPane().add(jlblApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, -1, 30));
 
         jtxtApellido.setBackground(new java.awt.Color(69, 73, 75));
         jtxtApellido.setForeground(new java.awt.Color(187, 187, 188));
         jtxtApellido.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         getContentPane().add(jtxtApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 130, 120, 30));
 
-        jLabel5.setForeground(new java.awt.Color(187, 187, 188));
-        jLabel5.setText("Teléfono:");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 180, -1, 30));
+        jlblTelefono.setForeground(new java.awt.Color(187, 187, 188));
+        jlblTelefono.setText("Teléfono:");
+        getContentPane().add(jlblTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 180, -1, 30));
 
-        jLabel6.setForeground(new java.awt.Color(187, 187, 188));
-        jLabel6.setText("  Correo:");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 80, 50, 30));
+        jlblCorreo.setForeground(new java.awt.Color(187, 187, 188));
+        jlblCorreo.setText("  Correo:");
+        getContentPane().add(jlblCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 80, 50, 30));
 
         jtxtCorreo.setBackground(new java.awt.Color(69, 73, 75));
         jtxtCorreo.setForeground(new java.awt.Color(187, 187, 188));
         jtxtCorreo.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         getContentPane().add(jtxtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 80, 120, 30));
 
-        jLabel7.setForeground(new java.awt.Color(187, 187, 188));
-        jLabel7.setText(" Condición:");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 230, 70, 30));
+        jlblCondicion.setForeground(new java.awt.Color(187, 187, 188));
+        jlblCondicion.setText(" Condición:");
+        getContentPane().add(jlblCondicion, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 230, 70, 30));
 
         jpfContraseña.setBackground(new java.awt.Color(69, 73, 75));
         jpfContraseña.setForeground(new java.awt.Color(187, 187, 188));
         jpfContraseña.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         getContentPane().add(jpfContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 180, 120, 30));
 
-        jLabel8.setForeground(new java.awt.Color(187, 187, 188));
-        jLabel8.setText(" Usuario:");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 130, 50, 30));
+        jlblUsuario.setForeground(new java.awt.Color(187, 187, 188));
+        jlblUsuario.setText(" Usuario:");
+        getContentPane().add(jlblUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 130, 50, 30));
 
         jcbCondicion.setBackground(new java.awt.Color(69, 73, 75));
         jcbCondicion.setForeground(new java.awt.Color(187, 187, 188));
@@ -125,27 +125,27 @@ public class UsuarioVista extends javax.swing.JInternalFrame {
         jbtnCrear.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         getContentPane().add(jbtnCrear, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 290, 110, 60));
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(187, 187, 188));
-        jLabel2.setText("CREAR USUARIO");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, 150, 40));
+        jlblTitulo.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jlblTitulo.setForeground(new java.awt.Color(187, 187, 188));
+        jlblTitulo.setText("CREAR USUARIO");
+        getContentPane().add(jlblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, 150, 40));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     public javax.swing.JButton jbtnCancelar;
     public javax.swing.JButton jbtnCrear;
     public javax.swing.JComboBox<String> jcbCondicion;
+    private javax.swing.JLabel jlblApellido;
+    private javax.swing.JLabel jlblCondicion;
+    private javax.swing.JLabel jlblContraseña;
+    private javax.swing.JLabel jlblCorreo;
+    private javax.swing.JLabel jlblNombre;
+    private javax.swing.JLabel jlblTelefono;
+    private javax.swing.JLabel jlblTitulo;
+    private javax.swing.JLabel jlblUsuario;
     public javax.swing.JPasswordField jpfContraseña;
     public javax.swing.JTextField jtxtApellido;
     public javax.swing.JTextField jtxtCorreo;

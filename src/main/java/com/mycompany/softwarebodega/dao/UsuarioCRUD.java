@@ -5,6 +5,7 @@
  */
 package com.mycompany.softwarebodega.dao;
 
+import com.mycompany.softwarebodega.controlador.UsuarioControl;
 import com.mycompany.softwarebodega.formato.UsuarioFormato;
 import com.mycompany.softwarebodega.modelo.Usuario;
 import com.mycompany.softwarebodega.vista.Menu;
@@ -32,7 +33,7 @@ public class UsuarioCRUD implements UsuarioFormato {
         try {
             st = Conexion.con.createStatement();
             int afect = st.executeUpdate("INSERT INTO USUARIO VALUES ("+e.getCodigo()+",'"+e.getNombre()+"','"+e.getApellido()+"',"+e.getTelefono()+",'"+e.getCorreo()+"','"+e.getUsuario()+"','"+e.getContraseña()+"','"+e.getCondicion()+"')");
-            JOptionPane.showMessageDialog(null, "Creado");
+            JOptionPane.showMessageDialog(null,"Creado");
         } catch (SQLException ex) {
             System.out.print(ex.getMessage());
         }
