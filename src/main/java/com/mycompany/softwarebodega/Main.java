@@ -7,6 +7,8 @@ package com.mycompany.softwarebodega;
 
 import com.mycompany.softwarebodega.controlador.LoginControl;
 import com.mycompany.softwarebodega.controlador.MenuControl;
+import com.mycompany.softwarebodega.controlador.ProductoControl;
+import com.mycompany.softwarebodega.controlador.ProveedorControl;
 import com.mycompany.softwarebodega.controlador.UsuarioControl;
 import com.mycompany.softwarebodega.dao.Conexion;
 import com.mycompany.softwarebodega.vista.AlmacenVista;
@@ -43,6 +45,8 @@ public class Main {
     public static ConfiguracionVista configuracionVista;
     public static MenuControl menuControl;
     public static UsuarioControl usuarioControl;
+    public static ProveedorControl proveedorControl;
+    public static ProductoControl productoControl;
     
     /**
      * Método Main.
@@ -65,5 +69,7 @@ public class Main {
         configuracionVista=new ConfiguracionVista();
         menuControl=new MenuControl(menu);
         usuarioControl=new UsuarioControl(usuarioVista);
+        proveedorControl=new ProveedorControl(proveedorVista);
+        productoControl=new ProductoControl(productoVista);
     }
 }

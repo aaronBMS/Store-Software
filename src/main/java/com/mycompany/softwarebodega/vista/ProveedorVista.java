@@ -52,8 +52,8 @@ public class ProveedorVista extends javax.swing.JInternalFrame {
 
         jlblTitulo.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jlblTitulo.setForeground(new java.awt.Color(187, 187, 188));
-        jlblTitulo.setText("CREAR PROVEEDOR");
-        getContentPane().add(jlblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 10, 180, 40));
+        jlblTitulo.setText("REGISTRAR PROVEEDOR");
+        getContentPane().add(jlblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 10, 220, 40));
 
         jlblRUC.setForeground(new java.awt.Color(187, 187, 188));
         jlblRUC.setText("RUC:");

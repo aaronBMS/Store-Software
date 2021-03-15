@@ -27,23 +27,148 @@ public class ProductoVista extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setClosable(true);
+        jlblTitulo = new javax.swing.JLabel();
+        jlblRUC = new javax.swing.JLabel();
+        jtxtRUC = new javax.swing.JTextField();
+        jlblNombre = new javax.swing.JLabel();
+        jtxtNombre = new javax.swing.JTextField();
+        jlblDireccion = new javax.swing.JLabel();
+        jtxtDireccion = new javax.swing.JTextField();
+        jlblCiudad = new javax.swing.JLabel();
+        jtxtCiudad = new javax.swing.JTextField();
+        jlblCorreo = new javax.swing.JLabel();
+        jtxtCorreo = new javax.swing.JTextField();
+        jlblTelefono = new javax.swing.JLabel();
+        jtxtTelefono = new javax.swing.JTextField();
+        jlblNombre1 = new javax.swing.JLabel();
+        jtxtNombre1 = new javax.swing.JTextField();
+        jlblTelefono1 = new javax.swing.JLabel();
+        jtxtTelefono1 = new javax.swing.JTextField();
+        jlblFoto = new javax.swing.JLabel();
+        jbtnCrear = new javax.swing.JButton();
+        jbtnCancelar = new javax.swing.JButton();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 671, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 401, Short.MAX_VALUE)
-        );
+        setBackground(new java.awt.Color(69, 73, 75));
+        setClosable(true);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jlblTitulo.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jlblTitulo.setForeground(new java.awt.Color(187, 187, 188));
+        jlblTitulo.setText("REGISTRAR PRODUCTO");
+        getContentPane().add(jlblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 10, 210, 40));
+
+        jlblRUC.setForeground(new java.awt.Color(187, 187, 188));
+        jlblRUC.setText("Nombre:");
+        getContentPane().add(jlblRUC, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 60, 30));
+
+        jtxtRUC.setBackground(new java.awt.Color(69, 73, 75));
+        jtxtRUC.setForeground(new java.awt.Color(187, 187, 188));
+        jtxtRUC.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(jtxtRUC, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, 140, 30));
+
+        jlblNombre.setForeground(new java.awt.Color(187, 187, 188));
+        jlblNombre.setText(" Categoría:");
+        getContentPane().add(jlblNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 70, 30));
+
+        jtxtNombre.setBackground(new java.awt.Color(69, 73, 75));
+        jtxtNombre.setForeground(new java.awt.Color(187, 187, 188));
+        jtxtNombre.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(jtxtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 120, 140, 30));
+
+        jlblDireccion.setForeground(new java.awt.Color(187, 187, 188));
+        jlblDireccion.setText("   Marca:");
+        getContentPane().add(jlblDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 50, 30));
+
+        jtxtDireccion.setBackground(new java.awt.Color(69, 73, 75));
+        jtxtDireccion.setForeground(new java.awt.Color(187, 187, 188));
+        jtxtDireccion.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(jtxtDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, 140, 30));
+
+        jlblCiudad.setForeground(new java.awt.Color(187, 187, 188));
+        jlblCiudad.setText("Stock Inicial:");
+        getContentPane().add(jlblCiudad, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 70, 80, 30));
+
+        jtxtCiudad.setBackground(new java.awt.Color(69, 73, 75));
+        jtxtCiudad.setForeground(new java.awt.Color(187, 187, 188));
+        jtxtCiudad.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(jtxtCiudad, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 70, 160, 30));
+
+        jlblCorreo.setForeground(new java.awt.Color(187, 187, 188));
+        jlblCorreo.setText("Stock Mínimo:");
+        getContentPane().add(jlblCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 120, 90, 30));
+
+        jtxtCorreo.setBackground(new java.awt.Color(69, 73, 75));
+        jtxtCorreo.setForeground(new java.awt.Color(187, 187, 188));
+        jtxtCorreo.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(jtxtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 120, 160, 30));
+
+        jlblTelefono.setForeground(new java.awt.Color(187, 187, 188));
+        jlblTelefono.setText(" Precio Costo:");
+        getContentPane().add(jlblTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 170, 80, 30));
+
+        jtxtTelefono.setBackground(new java.awt.Color(69, 73, 75));
+        jtxtTelefono.setForeground(new java.awt.Color(187, 187, 188));
+        jtxtTelefono.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(jtxtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 170, 160, 30));
+
+        jlblNombre1.setForeground(new java.awt.Color(187, 187, 188));
+        jlblNombre1.setText(" Utilidad:");
+        getContentPane().add(jlblNombre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 50, 30));
+
+        jtxtNombre1.setBackground(new java.awt.Color(69, 73, 75));
+        jtxtNombre1.setForeground(new java.awt.Color(187, 187, 188));
+        jtxtNombre1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(jtxtNombre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 220, 140, 30));
+
+        jlblTelefono1.setForeground(new java.awt.Color(187, 187, 188));
+        jlblTelefono1.setText(" Precio Venta:");
+        getContentPane().add(jlblTelefono1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 220, 80, 30));
+
+        jtxtTelefono1.setBackground(new java.awt.Color(69, 73, 75));
+        jtxtTelefono1.setForeground(new java.awt.Color(187, 187, 188));
+        jtxtTelefono1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(jtxtTelefono1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 220, 160, 30));
+
+        jlblFoto.setBackground(new java.awt.Color(69, 73, 75));
+        jlblFoto.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(jlblFoto, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 70, 140, 180));
+
+        jbtnCrear.setBackground(new java.awt.Color(69, 73, 75));
+        jbtnCrear.setForeground(new java.awt.Color(187, 187, 188));
+        jbtnCrear.setText("Crear");
+        jbtnCrear.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(jbtnCrear, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 310, 110, 60));
+
+        jbtnCancelar.setBackground(new java.awt.Color(69, 73, 75));
+        jbtnCancelar.setForeground(new java.awt.Color(187, 187, 188));
+        jbtnCancelar.setText("Cancelar");
+        jbtnCancelar.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(jbtnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 310, 110, 60));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton jbtnCancelar;
+    public javax.swing.JButton jbtnCrear;
+    private javax.swing.JLabel jlblCiudad;
+    private javax.swing.JLabel jlblCorreo;
+    private javax.swing.JLabel jlblDireccion;
+    public javax.swing.JLabel jlblFoto;
+    private javax.swing.JLabel jlblNombre;
+    private javax.swing.JLabel jlblNombre1;
+    private javax.swing.JLabel jlblRUC;
+    private javax.swing.JLabel jlblTelefono;
+    private javax.swing.JLabel jlblTelefono1;
+    private javax.swing.JLabel jlblTitulo;
+    public javax.swing.JTextField jtxtCiudad;
+    public javax.swing.JTextField jtxtCorreo;
+    public javax.swing.JTextField jtxtDireccion;
+    public javax.swing.JTextField jtxtNombre;
+    public javax.swing.JTextField jtxtNombre1;
+    public javax.swing.JTextField jtxtRUC;
+    public javax.swing.JTextField jtxtTelefono;
+    public javax.swing.JTextField jtxtTelefono1;
     // End of variables declaration//GEN-END:variables
 }
