@@ -28,20 +28,43 @@ public class AlmacenVista extends javax.swing.JInternalFrame {
     private void initComponents() {
 
         jlblTitulo = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jtTablaAlmacen = new javax.swing.JTable();
 
+        setBackground(new java.awt.Color(69, 73, 75));
         setClosable(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jlblTitulo.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jlblTitulo.setForeground(new java.awt.Color(187, 187, 188));
         jlblTitulo.setText("REGISTROS DE ALMACEN");
-        getContentPane().add(jlblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 20, 220, 40));
+        getContentPane().add(jlblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 20, 220, 40));
+
+        jtTablaAlmacen.setBackground(new java.awt.Color(69, 73, 75));
+        jtTablaAlmacen.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jtTablaAlmacen.setForeground(new java.awt.Color(187, 187, 188));
+        jtTablaAlmacen.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(jtTablaAlmacen);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 660, 310));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel jlblTitulo;
+    public javax.swing.JTable jtTablaAlmacen;
     // End of variables declaration//GEN-END:variables
 }

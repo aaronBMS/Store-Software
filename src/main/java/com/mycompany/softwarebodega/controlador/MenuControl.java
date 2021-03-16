@@ -5,6 +5,7 @@
  */
 package com.mycompany.softwarebodega.controlador;
 
+import com.mycompany.softwarebodega.dao.Listar;
 import com.mycompany.softwarebodega.vista.Menu;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -60,6 +61,8 @@ public class MenuControl implements ActionListener{
             CerrarVentanas();
             menu.jdpContenerdor.add(com.mycompany.softwarebodega.Main.almacenVista);
             com.mycompany.softwarebodega.Main.almacenVista.setVisible(true);
+            Listar l=new Listar();
+            l.tablaAlmacen(com.mycompany.softwarebodega.Main.almacenVista.jtTablaAlmacen);
         }
         if(e.getSource()==menu.jbtnProveedores){
             CerrarVentanas();
