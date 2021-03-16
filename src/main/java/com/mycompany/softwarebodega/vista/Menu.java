@@ -40,7 +40,9 @@ public class Menu extends javax.swing.JFrame {
         jdpContenerdor = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
+        jMenuItem4 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
+        jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
 
@@ -110,10 +112,17 @@ public class Menu extends javax.swing.JFrame {
 
         jMenu1.setForeground(new java.awt.Color(187, 187, 188));
         jMenu1.setText("Inicio");
+
+        jMenuItem4.setText("Salir");
+        jMenu1.add(jMenuItem4);
+
         jMenuBar1.add(jMenu1);
 
         jMenu2.setForeground(new java.awt.Color(187, 187, 188));
         jMenu2.setText("Opciones");
+
+        jMenuItem3.setText("Administrar Clientes");
+        jMenu2.add(jMenuItem3);
 
         jMenuItem1.setText("Administrar Usuarios");
         jMenu2.add(jMenuItem1);
@@ -169,6 +178,8 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
     public javax.swing.JButton jbtnAlmacen;
     public javax.swing.JButton jbtnClientes;
     public javax.swing.JButton jbtnCompras;

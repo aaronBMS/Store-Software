@@ -27,23 +27,90 @@ public class ClienteVista extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setClosable(true);
+        jlblNombre = new javax.swing.JLabel();
+        jlblApellido = new javax.swing.JLabel();
+        jlblTelefono = new javax.swing.JLabel();
+        jtxtNombre = new javax.swing.JTextField();
+        jtxtApellido = new javax.swing.JTextField();
+        jtxtTelefono = new javax.swing.JTextField();
+        jlblCorreo = new javax.swing.JLabel();
+        jtxtCorreo = new javax.swing.JTextField();
+        jbtnCrear = new javax.swing.JButton();
+        jbtnCancelar = new javax.swing.JButton();
+        jlblTitulo = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 671, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 401, Short.MAX_VALUE)
-        );
+        setBackground(new java.awt.Color(69, 73, 75));
+        setClosable(true);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jlblNombre.setForeground(new java.awt.Color(187, 187, 188));
+        jlblNombre.setText("Nombre:");
+        getContentPane().add(jlblNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, -1, 30));
+
+        jlblApellido.setForeground(new java.awt.Color(187, 187, 188));
+        jlblApellido.setText("Apellido:");
+        getContentPane().add(jlblApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, -1, 30));
+
+        jlblTelefono.setForeground(new java.awt.Color(187, 187, 188));
+        jlblTelefono.setText("Teléfono:");
+        getContentPane().add(jlblTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 140, -1, 30));
+
+        jtxtNombre.setBackground(new java.awt.Color(69, 73, 75));
+        jtxtNombre.setForeground(new java.awt.Color(187, 187, 188));
+        jtxtNombre.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(jtxtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 90, 120, 30));
+
+        jtxtApellido.setBackground(new java.awt.Color(69, 73, 75));
+        jtxtApellido.setForeground(new java.awt.Color(187, 187, 188));
+        jtxtApellido.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(jtxtApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 120, 30));
+
+        jtxtTelefono.setBackground(new java.awt.Color(69, 73, 75));
+        jtxtTelefono.setForeground(new java.awt.Color(187, 187, 188));
+        jtxtTelefono.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(jtxtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 140, 120, 30));
+
+        jlblCorreo.setForeground(new java.awt.Color(187, 187, 188));
+        jlblCorreo.setText("  Correo:");
+        getContentPane().add(jlblCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 90, 50, 30));
+
+        jtxtCorreo.setBackground(new java.awt.Color(69, 73, 75));
+        jtxtCorreo.setForeground(new java.awt.Color(187, 187, 188));
+        jtxtCorreo.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(jtxtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 90, 120, 30));
+
+        jbtnCrear.setBackground(new java.awt.Color(69, 73, 75));
+        jbtnCrear.setForeground(new java.awt.Color(187, 187, 188));
+        jbtnCrear.setText("Crear");
+        jbtnCrear.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(jbtnCrear, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 280, 110, 60));
+
+        jbtnCancelar.setBackground(new java.awt.Color(69, 73, 75));
+        jbtnCancelar.setForeground(new java.awt.Color(187, 187, 188));
+        jbtnCancelar.setText("Cancelar");
+        jbtnCancelar.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(jbtnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 280, 110, 60));
+
+        jlblTitulo.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jlblTitulo.setForeground(new java.awt.Color(187, 187, 188));
+        jlblTitulo.setText("REGISTRAR CLIENTE");
+        getContentPane().add(jlblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 20, 180, 40));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton jbtnCancelar;
+    public javax.swing.JButton jbtnCrear;
+    private javax.swing.JLabel jlblApellido;
+    private javax.swing.JLabel jlblCorreo;
+    private javax.swing.JLabel jlblNombre;
+    private javax.swing.JLabel jlblTelefono;
+    private javax.swing.JLabel jlblTitulo;
+    public javax.swing.JTextField jtxtApellido;
+    public javax.swing.JTextField jtxtCorreo;
+    public javax.swing.JTextField jtxtNombre;
+    public javax.swing.JTextField jtxtTelefono;
     // End of variables declaration//GEN-END:variables
 }

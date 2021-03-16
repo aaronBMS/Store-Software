@@ -5,10 +5,8 @@
  */
 package com.mycompany.softwarebodega.dao;
 
-import com.mycompany.softwarebodega.controlador.UsuarioControl;
 import com.mycompany.softwarebodega.formato.UsuarioFormato;
 import com.mycompany.softwarebodega.modelo.Usuario;
-import com.mycompany.softwarebodega.vista.Menu;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -25,7 +23,7 @@ public class UsuarioCRUD implements UsuarioFormato {
     
     @Override
     public void Search() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+         
     }
 
     @Override
@@ -33,7 +31,7 @@ public class UsuarioCRUD implements UsuarioFormato {
         try {
             st = Conexion.con.createStatement();
             int afect = st.executeUpdate("INSERT INTO USUARIO VALUES ("+e.getCodigo()+",'"+e.getNombre()+"','"+e.getApellido()+"',"+e.getTelefono()+",'"+e.getCorreo()+"','"+e.getUsuario()+"','"+e.getContraseña()+"','"+e.getCondicion()+"')");
-            JOptionPane.showMessageDialog(null,"Creado");
+            JOptionPane.showMessageDialog(null,"Usuario Creado");
         } catch (SQLException ex) {
             System.out.print(ex.getMessage());
         }
@@ -41,12 +39,12 @@ public class UsuarioCRUD implements UsuarioFormato {
 
     @Override
     public void Update(Usuario e) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       
     }
 
     @Override
     public void Delete(int code) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
 
     /**
@@ -78,7 +76,7 @@ public class UsuarioCRUD implements UsuarioFormato {
 
     @Override
     public void ValidatePriority(String user) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
 
 }

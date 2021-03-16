@@ -5,8 +5,6 @@
  */
 package com.mycompany.softwarebodega.modelo;
 
-import javax.swing.Icon;
-
 /**
  *
  * @author Aaron
@@ -19,7 +17,7 @@ public class Producto {
     private int codigo,stockInicial,stockMinimo;
     private String nombre,categoria,marca;
     private double precioCosto,precioVenta,utilidad;
-    private Icon imagen;
+    private byte[] imagen;
         
     /**
      * Método Constructor.
@@ -35,7 +33,7 @@ public class Producto {
      * @param imagen - Imágen de producto.
      */
     public Producto(int codigo, String nombre, String categoria, String marca, int stockInicial, int stockMinimo, 
-            double precioCosto, double precioVenta, double utilidad, Icon imagen){
+            double precioCosto, double precioVenta, double utilidad, byte[] imagen){
         this.codigo=codigo;
         this.nombre=nombre;
         this.categoria=categoria;
@@ -130,11 +128,11 @@ public class Producto {
         this.utilidad = utilidad;
     }
 
-    public Icon getImagen() {
+    public byte[] getImagen() {
         return imagen;
     }
 
-    public void setImagen(Icon imagen) {
+    public void setImagen(byte[] imagen) {
         this.imagen = imagen;
     }
     

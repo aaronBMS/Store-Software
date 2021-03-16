@@ -5,46 +5,48 @@
  */
 package com.mycompany.softwarebodega.dao;
 
-import com.mycompany.softwarebodega.formato.ProveedorFormato;
-import com.mycompany.softwarebodega.modelo.Proveedor;
+import com.mycompany.softwarebodega.formato.ClienteFormato;
+import com.mycompany.softwarebodega.modelo.Cliente;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
  *
  * @author Aaron
  */
-public class ProveedorCRUD implements ProveedorFormato{
+public class ClienteCRUD implements ClienteFormato{
     
     Statement st;
     ResultSet rs;
 
     @Override
     public void Search() {
-        
+       
     }
 
     @Override
-    public void Create(Proveedor e) {
-        try{
+    public void Create(Cliente e) {
+        try {
             st=Conexion.con.createStatement();
-            int afect=st.executeUpdate("INSERT INTO PROVEEDOR VALUES ("+e.getRUC()+",'"+e.getNombre()+"','"+e.getDireccion()+"','"+e.getCiudad()+"','"+e.getCorreo()+"',"+e.getTelefono()+",'"+e.getObservaciones()+"')");
-            JOptionPane.showMessageDialog(null,"Proveedor Registrado");
-        }catch(SQLException ex){
+            int afect=st.executeUpdate("INSERT INTO CLIENTE VALUES ("+e.getCodigo()+",'"+e.getNombre()+"','"+e.getApellido()+"',"+e.getTelefono()+",'"+e.getCorreo()+"')");
+            JOptionPane.showMessageDialog(null,"Cliente Registrado");
+        } catch (SQLException ex) {
             System.out.print(ex.getMessage());
         }
     }
 
     @Override
-    public void Update(Proveedor e) {
+    public void Update(Cliente e) {
         
     }
 
     @Override
     public void Delete(int code) {
-        
+       
     }
     
 }

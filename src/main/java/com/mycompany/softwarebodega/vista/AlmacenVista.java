@@ -27,23 +27,21 @@ public class AlmacenVista extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setClosable(true);
+        jlblTitulo = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 671, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 401, Short.MAX_VALUE)
-        );
+        setClosable(true);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jlblTitulo.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jlblTitulo.setForeground(new java.awt.Color(187, 187, 188));
+        jlblTitulo.setText("REGISTROS DE ALMACEN");
+        getContentPane().add(jlblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 20, 220, 40));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jlblTitulo;
     // End of variables declaration//GEN-END:variables
 }
