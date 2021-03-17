@@ -16,4 +16,5 @@ public interface ClienteFormato {
     public void Create(Cliente e);
     public void Update(Cliente e);
     public void Delete(int code);
+    public void ComboBox();
 }

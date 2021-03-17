@@ -3,12 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.softwarebodega.controlador;
+package com.mycompany.softwarebodega.formato;
+
+import com.mycompany.softwarebodega.modelo.Venta;
 
 /**
  *
  * @author Aaron
  */
-public class AlmacenControl {
-    
+public interface VentaFormato {
+    public void Search();
+    public void Create(Venta e);
 }

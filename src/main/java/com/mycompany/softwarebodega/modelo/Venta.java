@@ -16,7 +16,7 @@ public class Venta {
     /**
      * Variables Privadas.
      */
-    private int codigo,DNI;
+    private int codigo,codigoCliente;
     private String cliente,responsable,observaciones;
     private Date fecha;
     static final double IGV=0.18;
@@ -25,17 +25,17 @@ public class Venta {
     /**
      * Método Constructor.
      * @param codigo - Identificador por venta.
-     * @param DNI - Identificador por cliente.
+     * @param codigoCliente - Identificador por cliente.
      * @param cliente - Nombre.
      * @param responsable - Responsable/Usuario.
      * @param fecha - Fecha actual.
      * @param observaciones - Observaciones.
      * @param pagoTotal - Pago total.
      */
-    public Venta(int codigo, int DNI, String cliente, String responsable, Date fecha, String observaciones, 
+    public Venta(int codigo, int codigoCliente, String cliente, String responsable, Date fecha, String observaciones, 
             double pagoTotal){
         this.codigo=codigo;
-        this.DNI=DNI;
+        this.codigoCliente=codigoCliente;
         this.cliente=cliente;
         this.responsable=responsable;
         this.fecha=fecha;
@@ -61,12 +61,12 @@ public class Venta {
         this.codigo = codigo;
     }
 
-    public int getDNI() {
-        return DNI;
+    public int getCodigoCliente() {
+        return codigoCliente;
     }
 
-    public void setDNI(int DNI) {
-        this.DNI = DNI;
+    public void setCodigoCliente(int codigoCliente) {
+        this.codigoCliente = codigoCliente;
     }
 
     public String getCliente() {

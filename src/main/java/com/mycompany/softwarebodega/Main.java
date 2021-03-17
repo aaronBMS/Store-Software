@@ -5,11 +5,13 @@
  */
 package com.mycompany.softwarebodega;
 
+import com.mycompany.softwarebodega.controlador.ClienteControl;
 import com.mycompany.softwarebodega.controlador.LoginControl;
 import com.mycompany.softwarebodega.controlador.MenuControl;
 import com.mycompany.softwarebodega.controlador.ProductoControl;
 import com.mycompany.softwarebodega.controlador.ProveedorControl;
 import com.mycompany.softwarebodega.controlador.UsuarioControl;
+import com.mycompany.softwarebodega.controlador.VentaControl;
 import com.mycompany.softwarebodega.dao.Conexion;
 import com.mycompany.softwarebodega.vista.AlmacenVista;
 import com.mycompany.softwarebodega.vista.ClienteVista;
@@ -47,6 +49,8 @@ public class Main {
     public static UsuarioControl usuarioControl;
     public static ProveedorControl proveedorControl;
     public static ProductoControl productoControl;
+    public static ClienteControl clienteControl;
+    public static VentaControl ventaControl;
     
     /**
      * Método Main.
@@ -71,5 +75,7 @@ public class Main {
         usuarioControl=new UsuarioControl(usuarioVista);
         proveedorControl=new ProveedorControl(proveedorVista);
         productoControl=new ProductoControl(productoVista);
+        clienteControl=new ClienteControl(clienteVista);
+        ventaControl=new VentaControl(ventaVista);
     }
 }

@@ -18,4 +18,5 @@ public interface UsuarioFormato {
     public void Delete(int code);
     public void Validate();
     public void ValidatePriority(String user);
+    public void ComboBox();
 }

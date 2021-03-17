@@ -5,7 +5,9 @@
  */
 package com.mycompany.softwarebodega.controlador;
 
+import com.mycompany.softwarebodega.dao.ClienteCRUD;
 import com.mycompany.softwarebodega.dao.Listar;
+import com.mycompany.softwarebodega.dao.UsuarioCRUD;
 import com.mycompany.softwarebodega.vista.Menu;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -41,6 +43,13 @@ public class MenuControl implements ActionListener{
             CerrarVentanas();
             menu.jdpContenerdor.add(com.mycompany.softwarebodega.Main.ventaVista);
             com.mycompany.softwarebodega.Main.ventaVista.setVisible(true);
+            int code=(int)(Math.random()*1000000+1);
+            com.mycompany.softwarebodega.Main.ventaVista.jtxtCodigo.setText(code+"");
+            com.mycompany.softwarebodega.Main.ventaVista.jtxtCodigo.enable(false);
+            ClienteCRUD c=new ClienteCRUD();
+            UsuarioCRUD u=new UsuarioCRUD();
+            c.ComboBox();
+            u.ComboBox();
         }
         if(e.getSource()==menu.jbtnCompras){
             CerrarVentanas();

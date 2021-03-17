@@ -15,7 +15,7 @@ public class DetalleVenta {
      * Variables Privadas.
      */
     private String nombre;
-    private int cantidad;
+    private int cantidad,codigoVenta,codigoProducto;
     private double precio,descuento,total;
     
     /**
@@ -26,7 +26,9 @@ public class DetalleVenta {
      * @param descuento - Descuento.
      * @param total - Total a pagar.
      */
-    public DetalleVenta(String nombre, int cantidad, double precio, double descuento, double total){
+    public DetalleVenta(int codigoVenta, int codigoProducto, String nombre, int cantidad, double precio, double descuento, double total){
+        this.codigoVenta=codigoVenta;
+        this.codigoProducto=codigoProducto;
         this.nombre=nombre;
         this.cantidad=cantidad;
         this.precio=precio;

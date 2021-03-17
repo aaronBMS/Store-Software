@@ -79,4 +79,17 @@ public class UsuarioCRUD implements UsuarioFormato {
         
     }
 
+    @Override
+    public void ComboBox() {
+        try {
+            st = Conexion.con.createStatement(); 
+            rs=st.executeQuery("SELECT * FROM USUARIO");
+            while(rs.next()){
+                com.mycompany.softwarebodega.Main.ventaVista.jcbResponsable.addItem(rs.getString(6));
+            }            
+        } catch (Exception ex) {
+            System.out.print(ex);      
+        }
+    }
+
 }
