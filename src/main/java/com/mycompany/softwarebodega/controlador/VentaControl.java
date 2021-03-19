@@ -34,22 +34,16 @@ public class VentaControl implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource()==venta.jbtnCrear){
-            try {
-                int codigo=Integer.parseInt(venta.jtxtNombre.getText());
-                int ccliente=Integer.parseInt(venta.jcbCodigoDeCliente.getSelectedItem().toString());
-                String cliente=venta.jtxtNombre.getText();
-                String responsable=venta.jcbResponsable.getSelectedItem().toString();
-                Date date=new SimpleDateFormat("dd/MM/yyyy").parse(getFechaActual());
-                long d=date.getTime();
-                java.sql.Date fecha=new java.sql.Date(d);
-                String observaciones=venta.jtaObservaciones.getText();
-                double total=Double.parseDouble(venta.jtxtTotal.getText());
-                Venta v=new Venta(codigo,ccliente,cliente,responsable,fecha,observaciones,total);
-                VentaCRUD ventaCRUD=new VentaCRUD();
-                ventaCRUD.Create(v);
-            } catch (ParseException ex) {
-                System.out.print(ex.getMessage());
-            }
+            int codigo=Integer.parseInt(venta.jtxtCodigo.getText());
+            int ccliente=Integer.parseInt(venta.jcbCodigoDeCliente.getSelectedItem().toString());
+            String cliente=venta.jtxtNombre.getText();
+            String responsable=venta.jcbResponsable.getSelectedItem().toString();
+            String fecha=getFechaActual();
+            String observaciones=venta.jtaObservaciones.getText();
+            double total=Double.parseDouble(venta.jtxtTotal.getText());
+            Venta v=new Venta(codigo,ccliente,cliente,responsable,fecha,observaciones,total);
+            VentaCRUD ventaCRUD=new VentaCRUD();
+            ventaCRUD.Create(v);
         }
         if(e.getSource()==venta.jbtnCancelar){
             
@@ -61,7 +55,7 @@ public class VentaControl implements ActionListener{
     
     public static String getFechaActual() {
         Date ahora = new Date();
-        SimpleDateFormat formateador = new SimpleDateFormat("dd-MM-yyyy");
+        SimpleDateFormat formateador = new SimpleDateFormat("MM-dd-yyyy");
         return formateador.format(ahora);
     }
 }

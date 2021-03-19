@@ -17,8 +17,7 @@ public class Venta {
      * Variables Privadas.
      */
     private int codigo,codigoCliente;
-    private String cliente,responsable,observaciones;
-    private Date fecha;
+    private String cliente,responsable,observaciones,fecha;
     static final double IGV=0.18;
     private double pagoTotal;
     
@@ -32,7 +31,7 @@ public class Venta {
      * @param observaciones - Observaciones.
      * @param pagoTotal - Pago total.
      */
-    public Venta(int codigo, int codigoCliente, String cliente, String responsable, Date fecha, String observaciones, 
+    public Venta(int codigo, int codigoCliente, String cliente, String responsable, String fecha, String observaciones, 
             double pagoTotal){
         this.codigo=codigo;
         this.codigoCliente=codigoCliente;
@@ -93,11 +92,11 @@ public class Venta {
         this.observaciones = observaciones;
     }
 
-    public Date getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 

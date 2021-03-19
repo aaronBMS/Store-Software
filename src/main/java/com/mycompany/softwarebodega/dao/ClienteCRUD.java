@@ -55,7 +55,7 @@ public class ClienteCRUD implements ClienteFormato{
             st = Conexion.con.createStatement(); 
             rs=st.executeQuery("SELECT * FROM CLIENTE");
             while(rs.next()){
-                com.mycompany.softwarebodega.Main.ventaVista.jcbCodigoDeCliente.addItem(rs.getString(1)+"-"+rs.getString(2));
+                com.mycompany.softwarebodega.Main.ventaVista.jcbCodigoDeCliente.addItem(rs.getString(1));
             }            
         } catch (Exception ex) {
             System.out.print(ex);      

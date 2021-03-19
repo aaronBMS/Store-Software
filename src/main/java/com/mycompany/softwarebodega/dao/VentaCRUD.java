@@ -32,7 +32,7 @@ public class VentaCRUD implements VentaFormato{
     public void Create(Venta e) {
         try {
             st=Conexion.con.createStatement();
-            int afect=st.executeUpdate("INSERT INTO VENTA VALUES ("+e.getCodigo()+","+e.getCodigoCliente()+",'"+e.getCliente()+"','"+e.getResponsable()+"','"+e.getFecha()+"','"+e.getObservaciones()+"',"+e.getPagoTotal()+"");
+            int afect=st.executeUpdate("INSERT INTO VENTA VALUES ("+e.getCodigo()+","+e.getCodigoCliente()+",'"+e.getCliente()+"','"+e.getResponsable()+"','"+e.getFecha()+"','"+e.getObservaciones()+"',"+e.getPagoTotal()+")");
             JOptionPane.showMessageDialog(null,"Venta Registrada");
         } catch (SQLException ex) {
             System.out.print(ex.getMessage());
