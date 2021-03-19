@@ -5,6 +5,8 @@
  */
 package com.mycompany.softwarebodega.vista;
 
+import java.awt.Color;
+
 /**
  *
  * @author Aaron
@@ -16,6 +18,7 @@ public class ConfiguracionVista extends javax.swing.JInternalFrame {
      */
     public ConfiguracionVista() {
         initComponents();
+        this.getContentPane().setBackground(Color.DARK_GRAY);
     }
 
     /**

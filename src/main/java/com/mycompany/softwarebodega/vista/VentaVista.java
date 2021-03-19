@@ -5,6 +5,8 @@
  */
 package com.mycompany.softwarebodega.vista;
 
+import java.awt.Color;
+
 /**
  *
  * @author Aaron
@@ -16,6 +18,7 @@ public class VentaVista extends javax.swing.JInternalFrame {
      */
     public VentaVista() {
         initComponents();
+        this.getContentPane().setBackground(Color.DARK_GRAY);
     }
 
     /**
@@ -170,7 +173,7 @@ public class VentaVista extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jlblResponsable;
     private javax.swing.JLabel jlblTitulo;
     private javax.swing.JLabel jlblTotal;
-    private javax.swing.JTable jtVentas;
+    public javax.swing.JTable jtVentas;
     public javax.swing.JTextArea jtaObservaciones;
     public javax.swing.JTextField jtxtCodigo;
     public javax.swing.JTextField jtxtNombre;

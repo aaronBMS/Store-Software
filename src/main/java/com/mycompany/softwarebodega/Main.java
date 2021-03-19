@@ -6,6 +6,7 @@
 package com.mycompany.softwarebodega;
 
 import com.mycompany.softwarebodega.controlador.ClienteControl;
+import com.mycompany.softwarebodega.controlador.DetalleVControl;
 import com.mycompany.softwarebodega.controlador.LoginControl;
 import com.mycompany.softwarebodega.controlador.MenuControl;
 import com.mycompany.softwarebodega.controlador.ProductoControl;
@@ -17,6 +18,7 @@ import com.mycompany.softwarebodega.vista.AlmacenVista;
 import com.mycompany.softwarebodega.vista.ClienteVista;
 import com.mycompany.softwarebodega.vista.CompraVista;
 import com.mycompany.softwarebodega.vista.ConfiguracionVista;
+import com.mycompany.softwarebodega.vista.DetalleVVista;
 import com.mycompany.softwarebodega.vista.Login;
 import com.mycompany.softwarebodega.vista.Menu;
 import com.mycompany.softwarebodega.vista.ProductoVista;
@@ -51,6 +53,8 @@ public class Main {
     public static ProductoControl productoControl;
     public static ClienteControl clienteControl;
     public static VentaControl ventaControl;
+    public static DetalleVVista detalleVVista;
+    public static DetalleVControl detalleVcontrol;
     
     /**
      * Método Main.
@@ -63,6 +67,7 @@ public class Main {
         login.setVisible(true);
         loginControl=new LoginControl(login);
         menu=new Menu();
+        detalleVVista=new DetalleVVista();
         usuarioVista=new UsuarioVista();
         ventaVista=new VentaVista();
         compraVista=new CompraVista();
@@ -77,5 +82,6 @@ public class Main {
         productoControl=new ProductoControl(productoVista);
         clienteControl=new ClienteControl(clienteVista);
         ventaControl=new VentaControl(ventaVista);
+        detalleVcontrol=new DetalleVControl(detalleVVista);
     }
 }

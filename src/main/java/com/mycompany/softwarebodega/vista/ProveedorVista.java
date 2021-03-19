@@ -5,6 +5,8 @@
  */
 package com.mycompany.softwarebodega.vista;
 
+import java.awt.Color;
+
 /**
  *
  * @author Aaron
@@ -16,6 +18,7 @@ public class ProveedorVista extends javax.swing.JInternalFrame {
      */
     public ProveedorVista() {
         initComponents();
+        this.getContentPane().setBackground(Color.DARK_GRAY);
     }
 
     /**

@@ -5,12 +5,14 @@
  */
 package com.mycompany.softwarebodega.formato;
 
+import com.mycompany.softwarebodega.modelo.DetalleVenta;
+
 /**
  *
  * @author Aaron
  */
-public interface Encabezado {
-    public String Data[][]={};
-    public String tablaAlmacen[]={"Código","Nombre","Categoría","Marca","Stock"};
-    public String tablaVenta[]={"Código","Nombre","Cantidad","Precio","Descuento","Total"};
+public interface DVentaFormato {
+    public void Create(DetalleVenta e);
+    public void Search(String n);
+    public void ComboBox();
 }

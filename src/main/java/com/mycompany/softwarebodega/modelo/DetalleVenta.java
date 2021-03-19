@@ -42,10 +42,27 @@ public class DetalleVenta {
     public DetalleVenta(){
     }
 
+
     /**
      * Métodos Get y Set.
      * @return 
      */
+    public int getCodigoVenta() {
+        return codigoVenta;
+    }
+
+    public void setCodigoVenta(int codigoVenta) {
+        this.codigoVenta = codigoVenta;
+    }
+
+    public int getCodigoProducto() {
+        return codigoProducto;
+    }
+
+    public void setCodigoProducto(int codigoProducto) {
+        this.codigoProducto = codigoProducto;
+    }
+
     public String getNombre() {
         return nombre;
     }

@@ -44,4 +44,29 @@ public class Listar implements Encabezado{
             System.out.print(ex.getMessage());
         }
     }
+    
+    public void tablaVentas(JTable tabla, int codigo){
+        DefaultTableModel mt=new DefaultTableModel(Data,tablaVenta){
+            public boolean isCellEditable(int row, int column){
+                return false;
+            }
+        };
+        tabla.setModel(mt);
+        try{
+            st=Conexion.con.createStatement();
+            rs=st.executeQuery("SELECT * FROM DETALLE_VENTA WHERE CODIGO_VENTA=" +codigo);
+            while(rs.next()){
+                Object[] rm=new Object[6];
+                rm[0]=rs.getInt(2);
+                rm[1]=rs.getString(3);
+                rm[2]=rs.getInt(4);
+                rm[3]=rs.getDouble(5);
+                rm[4]=rs.getDouble(6);
+                rm[5]=rs.getDouble(7);
+                mt.addRow(rm);
+            }
+        }catch(SQLException ex){
+            System.out.print(ex.getMessage());
+        }
+    }
 }
