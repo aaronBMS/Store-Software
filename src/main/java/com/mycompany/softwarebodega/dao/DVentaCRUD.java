@@ -10,8 +10,6 @@ import com.mycompany.softwarebodega.modelo.DetalleVenta;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -42,7 +40,7 @@ public class DVentaCRUD implements DVentaFormato{
         try {
             st=Conexion.con.createStatement();
             int afect=st.executeUpdate("INSERT INTO DETALLE_VENTA VALUES ("+e.getCodigoVenta()+","+e.getCodigoProducto()+",'"+e.getNombre()+"',"+e.getCantidad()+","+e.getPrecio()+","+e.getDescuento()+","+e.getTotal()+")");
-            JOptionPane.showMessageDialog(null,"Venta Registrada");
+            JOptionPane.showMessageDialog(null,"Venta Agregada");
         } catch (SQLException ex) {
             System.out.print(ex.getMessage());
         }

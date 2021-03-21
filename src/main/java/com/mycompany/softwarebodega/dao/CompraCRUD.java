@@ -5,8 +5,8 @@
  */
 package com.mycompany.softwarebodega.dao;
 
-import com.mycompany.softwarebodega.formato.VentaFormato;
-import com.mycompany.softwarebodega.modelo.Venta;
+import com.mycompany.softwarebodega.formato.CompraFormato;
+import com.mycompany.softwarebodega.modelo.Compra;
 import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
@@ -15,16 +15,16 @@ import javax.swing.JOptionPane;
  *
  * @author Aaron
  */
-public class VentaCRUD implements VentaFormato{
+public class CompraCRUD implements CompraFormato{
 
     Statement st;
-
+    
     @Override
-    public void Create(Venta e) {
+    public void Create(Compra e) {
         try {
             st=Conexion.con.createStatement();
-            int afect=st.executeUpdate("INSERT INTO VENTA VALUES ("+e.getCodigo()+","+e.getCodigoCliente()+",'"+e.getCliente()+"','"+e.getResponsable()+"','"+e.getFecha()+"','"+e.getObservaciones()+"',"+e.getPagoTotal()+")");
-            JOptionPane.showMessageDialog(null,"Venta Registrada");
+            int afect=st.executeUpdate("INSERT INTO COMPRA VALUES ("+e.getCodigo()+","+e.getRUC()+",'"+e.getProveedor()+"','"+e.getResponsable()+"','"+e.getFecha()+"','"+e.getObservaciones()+"',"+e.getPagoTotal()+")");
+            JOptionPane.showMessageDialog(null,"Compra Registrada");
         } catch (SQLException ex) {
             System.out.print(ex.getMessage());
         }

@@ -6,6 +6,8 @@
 package com.mycompany.softwarebodega;
 
 import com.mycompany.softwarebodega.controlador.ClienteControl;
+import com.mycompany.softwarebodega.controlador.CompraControl;
+import com.mycompany.softwarebodega.controlador.DetalleCControl;
 import com.mycompany.softwarebodega.controlador.DetalleVControl;
 import com.mycompany.softwarebodega.controlador.LoginControl;
 import com.mycompany.softwarebodega.controlador.MenuControl;
@@ -17,7 +19,7 @@ import com.mycompany.softwarebodega.dao.Conexion;
 import com.mycompany.softwarebodega.vista.AlmacenVista;
 import com.mycompany.softwarebodega.vista.ClienteVista;
 import com.mycompany.softwarebodega.vista.CompraVista;
-import com.mycompany.softwarebodega.vista.ConfiguracionVista;
+import com.mycompany.softwarebodega.vista.DetalleCVista;
 import com.mycompany.softwarebodega.vista.DetalleVVista;
 import com.mycompany.softwarebodega.vista.Login;
 import com.mycompany.softwarebodega.vista.Menu;
@@ -46,7 +48,6 @@ public class Main {
     public static ProductoVista productoVista;
     public static AlmacenVista almacenVista;
     public static ProveedorVista proveedorVista;
-    public static ConfiguracionVista configuracionVista;
     public static MenuControl menuControl;
     public static UsuarioControl usuarioControl;
     public static ProveedorControl proveedorControl;
@@ -55,6 +56,9 @@ public class Main {
     public static VentaControl ventaControl;
     public static DetalleVVista detalleVVista;
     public static DetalleVControl detalleVcontrol;
+    public static CompraControl compraControl;
+    public static DetalleCVista detalleCVista;
+    public static DetalleCControl detalleCcontrol;
     
     /**
      * Método Main.
@@ -75,7 +79,6 @@ public class Main {
         productoVista=new ProductoVista();
         almacenVista=new AlmacenVista();
         proveedorVista=new ProveedorVista();
-        configuracionVista=new ConfiguracionVista();
         menuControl=new MenuControl(menu);
         usuarioControl=new UsuarioControl(usuarioVista);
         proveedorControl=new ProveedorControl(proveedorVista);
@@ -83,5 +86,8 @@ public class Main {
         clienteControl=new ClienteControl(clienteVista);
         ventaControl=new VentaControl(ventaVista);
         detalleVcontrol=new DetalleVControl(detalleVVista);
+        compraControl=new CompraControl(compraVista);
+        detalleCVista=new DetalleCVista();
+        detalleCcontrol=new DetalleCControl(detalleCVista);
     }
 }

@@ -5,12 +5,12 @@
  */
 package com.mycompany.softwarebodega.formato;
 
-import com.mycompany.softwarebodega.modelo.Venta;
+import com.mycompany.softwarebodega.modelo.Compra;
 
 /**
  *
  * @author Aaron
  */
-public interface VentaFormato {
-    public void Create(Venta e);
+public interface CompraFormato {
+    public void Create(Compra e);
 }

@@ -8,16 +8,11 @@ package com.mycompany.softwarebodega.controlador;
 import com.mycompany.softwarebodega.dao.DVentaCRUD;
 import com.mycompany.softwarebodega.dao.VentaCRUD;
 import com.mycompany.softwarebodega.modelo.Venta;
-import com.mycompany.softwarebodega.vista.DetalleVVista;
 import com.mycompany.softwarebodega.vista.VentaVista;
-import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -67,7 +62,7 @@ public class VentaControl implements ActionListener {
 
     public static String getFechaActual() {
         Date ahora = new Date();
-        SimpleDateFormat formateador = new SimpleDateFormat("MM-dd-yyyy");
+        SimpleDateFormat formateador = new SimpleDateFormat("dd-MM-yyyy");
         return formateador.format(ahora);
     }
 

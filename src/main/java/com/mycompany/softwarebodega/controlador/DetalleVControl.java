@@ -25,7 +25,7 @@ public class DetalleVControl implements ActionListener{
         this.dv.jbtnAgregar.addActionListener(this);
         this.dv.jbtnSalir.addActionListener(this);
         this.dv.jbtnRegistrar.addActionListener(this);
-        this.dv.jbtnSalir.addActionListener(this);
+        this.dv.jbtnLimpiar.addActionListener(this);
     }    
     
     @Override

@@ -30,21 +30,152 @@ public class CompraVista extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 394, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 274, Short.MAX_VALUE)
-        );
+        jlblCodigo = new javax.swing.JLabel();
+        jtxtCodigo = new javax.swing.JTextField();
+        jlblRUC = new javax.swing.JLabel();
+        jcbRUC = new javax.swing.JComboBox<>();
+        jlblNombre = new javax.swing.JLabel();
+        jtxtNombre = new javax.swing.JTextField();
+        jlblResponsable = new javax.swing.JLabel();
+        jcbResponsable = new javax.swing.JComboBox<>();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jtCompra = new javax.swing.JTable();
+        jbtnCrear = new javax.swing.JButton();
+        jbtnCancelar = new javax.swing.JButton();
+        jbtnEscogerProducto = new javax.swing.JButton();
+        jtxtTotal = new javax.swing.JTextField();
+        jlblTotal = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jtaObservaciones = new javax.swing.JTextArea();
+        jlblObservaciones = new javax.swing.JLabel();
+        jlblTitulo = new javax.swing.JLabel();
+
+        setClosable(true);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jlblCodigo.setForeground(new java.awt.Color(187, 187, 188));
+        jlblCodigo.setText("C:");
+        getContentPane().add(jlblCodigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 20, 30));
+
+        jtxtCodigo.setBackground(new java.awt.Color(69, 73, 75));
+        jtxtCodigo.setForeground(new java.awt.Color(187, 187, 188));
+        jtxtCodigo.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(jtxtCodigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, 70, 30));
+
+        jlblRUC.setForeground(new java.awt.Color(187, 187, 188));
+        jlblRUC.setText("RUC:");
+        getContentPane().add(jlblRUC, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 60, 50, 30));
+
+        jcbRUC.setBackground(new java.awt.Color(69, 73, 75));
+        jcbRUC.setForeground(new java.awt.Color(187, 187, 188));
+        jcbRUC.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-" }));
+        jcbRUC.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(jcbRUC, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, 120, 30));
+
+        jlblNombre.setForeground(new java.awt.Color(187, 187, 188));
+        jlblNombre.setText("Proveedor:");
+        getContentPane().add(jlblNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, 80, 30));
+
+        jtxtNombre.setBackground(new java.awt.Color(69, 73, 75));
+        jtxtNombre.setForeground(new java.awt.Color(187, 187, 188));
+        jtxtNombre.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(jtxtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 100, 120, 30));
+
+        jlblResponsable.setForeground(new java.awt.Color(187, 187, 188));
+        jlblResponsable.setText("Responsable:");
+        getContentPane().add(jlblResponsable, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 140, 90, 30));
+
+        jcbResponsable.setBackground(new java.awt.Color(69, 73, 75));
+        jcbResponsable.setForeground(new java.awt.Color(187, 187, 188));
+        jcbResponsable.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-" }));
+        jcbResponsable.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(jcbResponsable, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 120, 30));
+
+        jtCompra.setBackground(new java.awt.Color(69, 73, 75));
+        jtCompra.setForeground(new java.awt.Color(187, 187, 188));
+        jtCompra.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane2.setViewportView(jtCompra);
+
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, 630, 150));
+
+        jbtnCrear.setBackground(new java.awt.Color(69, 73, 75));
+        jbtnCrear.setForeground(new java.awt.Color(187, 187, 188));
+        jbtnCrear.setText("Crear");
+        jbtnCrear.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(jbtnCrear, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, 110, 40));
+
+        jbtnCancelar.setBackground(new java.awt.Color(69, 73, 75));
+        jbtnCancelar.setForeground(new java.awt.Color(187, 187, 188));
+        jbtnCancelar.setText("Cancelar");
+        jbtnCancelar.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(jbtnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 340, 110, 40));
+
+        jbtnEscogerProducto.setBackground(new java.awt.Color(69, 73, 75));
+        jbtnEscogerProducto.setForeground(new java.awt.Color(187, 187, 188));
+        jbtnEscogerProducto.setText("Escoger Producto");
+        jbtnEscogerProducto.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(jbtnEscogerProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 340, 110, 40));
+
+        jtxtTotal.setBackground(new java.awt.Color(69, 73, 75));
+        jtxtTotal.setForeground(new java.awt.Color(187, 187, 188));
+        jtxtTotal.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(jtxtTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 340, 120, 30));
+
+        jlblTotal.setForeground(new java.awt.Color(187, 187, 188));
+        jlblTotal.setText("Total:");
+        getContentPane().add(jlblTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 340, -1, 30));
+
+        jtaObservaciones.setBackground(new java.awt.Color(69, 73, 75));
+        jtaObservaciones.setColumns(20);
+        jtaObservaciones.setForeground(new java.awt.Color(187, 187, 188));
+        jtaObservaciones.setRows(5);
+        jtaObservaciones.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jScrollPane1.setViewportView(jtaObservaciones);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 90, 380, 80));
+
+        jlblObservaciones.setForeground(new java.awt.Color(187, 187, 188));
+        jlblObservaciones.setText("Observaciones:");
+        getContentPane().add(jlblObservaciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 60, 110, 30));
+
+        jlblTitulo.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jlblTitulo.setForeground(new java.awt.Color(187, 187, 188));
+        jlblTitulo.setText("REALIZAR COMPRA");
+        getContentPane().add(jlblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 10, 180, 40));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    public javax.swing.JButton jbtnCancelar;
+    public javax.swing.JButton jbtnCrear;
+    public javax.swing.JButton jbtnEscogerProducto;
+    public javax.swing.JComboBox<String> jcbRUC;
+    public javax.swing.JComboBox<String> jcbResponsable;
+    private javax.swing.JLabel jlblCodigo;
+    private javax.swing.JLabel jlblNombre;
+    private javax.swing.JLabel jlblObservaciones;
+    private javax.swing.JLabel jlblRUC;
+    private javax.swing.JLabel jlblResponsable;
+    private javax.swing.JLabel jlblTitulo;
+    private javax.swing.JLabel jlblTotal;
+    public javax.swing.JTable jtCompra;
+    public javax.swing.JTextArea jtaObservaciones;
+    public javax.swing.JTextField jtxtCodigo;
+    public javax.swing.JTextField jtxtNombre;
+    public javax.swing.JTextField jtxtTotal;
     // End of variables declaration//GEN-END:variables
 }

@@ -15,7 +15,7 @@ public class DetalleCompra {
      * Variables Privadas.
      */
     private String nombre;
-    private int cantidad;
+    private int cantidad,codigoCompra,codigoProducto;
     private double precio,descuento,total;
     
     /**
@@ -26,7 +26,9 @@ public class DetalleCompra {
      * @param descuento - Descuento.
      * @param total - Total a pagar.
      */
-    public DetalleCompra(String nombre, int cantidad, double precio, double descuento, double total){
+    public DetalleCompra(int codigoCompra, int codigoProducto, String nombre, int cantidad, double precio, double descuento, double total){
+        this.codigoCompra=codigoCompra;
+        this.codigoProducto=codigoProducto;
         this.nombre=nombre;
         this.cantidad=cantidad;
         this.precio=precio;
@@ -40,10 +42,26 @@ public class DetalleCompra {
     public DetalleCompra(){
     }
 
-    /**
+     /**
      * Métodos Get y Set.
      * @return 
      */
+    public int getCodigoCompra() {
+        return codigoCompra;
+    }
+
+    public void setCodigoCompra(int codigoCompra) {
+        this.codigoCompra = codigoCompra;
+    }
+
+    public int getCodigoProducto() {
+        return codigoProducto;
+    }
+
+    public void setCodigoProducto(int codigoProducto) {
+        this.codigoProducto = codigoProducto;
+    }
+
     public String getNombre() {
         return nombre;
     }

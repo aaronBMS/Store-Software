@@ -5,12 +5,14 @@
  */
 package com.mycompany.softwarebodega.formato;
 
-import com.mycompany.softwarebodega.modelo.Venta;
+import com.mycompany.softwarebodega.modelo.DetalleCompra;
 
 /**
  *
  * @author Aaron
  */
-public interface VentaFormato {
-    public void Create(Venta e);
+public interface DCompraFormato {
+    public void Create(DetalleCompra e);
+    public void Search(String n);
+    public void ComboBox();
 }

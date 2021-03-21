@@ -17,8 +17,7 @@ public class Compra {
      * Variables Privadas.
      */
     private int codigo,RUC;
-    private String proveedor,responsable,observaciones;
-    private Date fecha;
+    private String proveedor,responsable,observaciones,fecha;
     static final double IGV=0.18;
     private double pagoTotal;
     
@@ -32,7 +31,7 @@ public class Compra {
      * @param observaciones - Observaciones.
      * @param pagoTotal - Pago total.
      */
-    public Compra(int codigo, int RUC, String proveedor, String responsable, Date fecha, String observaciones, 
+    public Compra(int codigo, int RUC, String proveedor, String responsable, String fecha, String observaciones, 
             double pagoTotal){
         this.codigo=codigo;
         this.RUC=RUC;
@@ -93,11 +92,11 @@ public class Compra {
         this.observaciones = observaciones;
     }
 
-    public Date getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 
