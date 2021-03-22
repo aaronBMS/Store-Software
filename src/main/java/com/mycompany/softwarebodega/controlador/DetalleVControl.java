@@ -53,6 +53,9 @@ public class DetalleVControl implements ActionListener{
             DVentaCRUD dvCRUD=new DVentaCRUD();
             dvCRUD.Search(dv.jcbProducto.getSelectedItem().toString());
         }
+        if(e.getSource()==dv.jbtnLimpiar){
+            Limpiar();
+        }
     }
     
     public void Limpiar(){

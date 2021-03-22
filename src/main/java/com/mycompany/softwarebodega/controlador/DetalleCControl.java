@@ -53,6 +53,9 @@ public class DetalleCControl implements ActionListener{
             DCompraCRUD dcCRUD=new DCompraCRUD();
             dcCRUD.Search(det.jcbProducto.getSelectedItem().toString());
         }
+        if(e.getSource()==det.jbtnLimpiar){
+            Limpiar();
+        }
     }
     
     public void Limpiar(){
