@@ -24,11 +24,6 @@ public class ProductoCRUD implements ProductoFormato{
     ResultSet rs;
 
     @Override
-    public void Search() {
-        
-    }
-
-    @Override
     public void Create(Producto e) {
         try {
             st=Conexion.con.createStatement();
@@ -40,16 +35,6 @@ public class ProductoCRUD implements ProductoFormato{
             System.out.print(ex.getMessage());
         }
        
-    }
-
-    @Override
-    public void Update(Producto e) {
-        
-    }
-
-    @Override
-    public void Delete(int code) {
-        
     }
     
 }

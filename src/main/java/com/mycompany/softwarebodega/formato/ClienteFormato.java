@@ -12,9 +12,6 @@ import com.mycompany.softwarebodega.modelo.Cliente;
  * @author Aaron
  */
 public interface ClienteFormato {
-    public void Search();
     public void Create(Cliente e);
-    public void Update(Cliente e);
-    public void Delete(int code);
     public void ComboBox();
 }

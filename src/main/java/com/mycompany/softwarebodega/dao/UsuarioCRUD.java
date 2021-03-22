@@ -20,11 +20,6 @@ public class UsuarioCRUD implements UsuarioFormato {
  
     Statement st;
     ResultSet rs;
-    
-    @Override
-    public void Search() {
-         
-    }
 
     @Override
     public void Create(Usuario e) {
@@ -35,16 +30,6 @@ public class UsuarioCRUD implements UsuarioFormato {
         } catch (SQLException ex) {
             System.out.print(ex.getMessage());
         }
-    }
-
-    @Override
-    public void Update(Usuario e) {
-       
-    }
-
-    @Override
-    public void Delete(int code) {
-        
     }
 
     /**
@@ -72,11 +57,6 @@ public class UsuarioCRUD implements UsuarioFormato {
         } catch (SQLException ex) {
             System.out.print(ex.getMessage());
         }
-    }
-
-    @Override
-    public void ValidatePriority(String user) {
-        
     }
 
     @Override

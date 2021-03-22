@@ -12,8 +12,5 @@ import com.mycompany.softwarebodega.modelo.Producto;
  * @author Aaron
  */
 public interface ProductoFormato {
-    public void Search();
     public void Create(Producto e);
-    public void Update(Producto e);
-    public void Delete(int code);
 }

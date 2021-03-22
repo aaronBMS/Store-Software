@@ -12,8 +12,5 @@ import com.mycompany.softwarebodega.modelo.Proveedor;
  * @author Aaron
  */
 public interface ProveedorFormato {
-    public void Search();
     public void Create(Proveedor e);
-    public void Update(Proveedor e);
-    public void Delete(int code);
 }

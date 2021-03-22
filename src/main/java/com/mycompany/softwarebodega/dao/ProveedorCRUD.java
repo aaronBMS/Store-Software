@@ -22,11 +22,6 @@ public class ProveedorCRUD implements ProveedorFormato{
     ResultSet rs;
 
     @Override
-    public void Search() {
-        
-    }
-
-    @Override
     public void Create(Proveedor e) {
         try{
             st=Conexion.con.createStatement();
@@ -36,15 +31,4 @@ public class ProveedorCRUD implements ProveedorFormato{
             System.out.print(ex.getMessage());
         }
     }
-
-    @Override
-    public void Update(Proveedor e) {
-        
-    }
-
-    @Override
-    public void Delete(int code) {
-        
-    }
-    
 }

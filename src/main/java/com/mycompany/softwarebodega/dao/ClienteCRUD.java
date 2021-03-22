@@ -10,8 +10,6 @@ import com.mycompany.softwarebodega.modelo.Cliente;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -24,11 +22,6 @@ public class ClienteCRUD implements ClienteFormato{
     ResultSet rs;
 
     @Override
-    public void Search() {
-       
-    }
-
-    @Override
     public void Create(Cliente e) {
         try {
             st=Conexion.con.createStatement();
@@ -37,16 +30,6 @@ public class ClienteCRUD implements ClienteFormato{
         } catch (SQLException ex) {
             System.out.print(ex.getMessage());
         }
-    }
-
-    @Override
-    public void Update(Cliente e) {
-        
-    }
-
-    @Override
-    public void Delete(int code) {
-       
     }
 
     @Override
